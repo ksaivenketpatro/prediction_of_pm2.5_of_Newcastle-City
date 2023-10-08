@@ -1,0 +1,11 @@
+# Version - denoted the version of the docker compose file 
+version: "3"
+
+#Services that are running part of the configuration
+services:
+  # Name of the services running
+  rabbitmq_portal:
+    # docker image that the user wants to run
+    image: rabbitmq:management
+    ports:
+      - 5672:5672
